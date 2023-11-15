@@ -9,7 +9,7 @@ yum install -y curl
 
 sudo curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
 
-sudo apt install -y nodejs
+sudo yum install -y nodejs
 
 sudo yum install atk java-atk-wrapper at-spi2-atk gtk3 libXt libdrm mesa-libgbm nss libdrm mesa-libgbm
 
