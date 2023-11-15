@@ -7,9 +7,7 @@ yum update -y
 
 yum install -y curl
 
-curl -sL https://rpm.nodesource.com/setup_14.x -o nodesource_setup.sh
-
-sudo bash nodesource_setup.sh
+sudo curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
 
 sudo apt install -y nodejs
 
