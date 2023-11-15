@@ -2,6 +2,30 @@ markdown
 
 # install-puppeteer
 
+# if you want install nodejs with nvm
+complete doc nvm
+https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script
+
+```bash
+# Install NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+or
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+
+# Load NVM into the current shell session
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+#list Node.js Version
+nvm ls-remote
+
+# Install Node.js 14.x
+nvm install 14.x.x
+
+# Set Node.js 14.x as the default version
+nvm use 14.x.x
+```
+
 ## On CentOS 7/8, Alma Linux 8 & Rocky Linux 8
 
 ```bash
