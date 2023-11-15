@@ -1,43 +1,58 @@
+markdown
+
 # install-puppeteer
-install-puppeteer
 
-# **on centos 7/8 alma linux 8 & rocky linux 8**
+## On CentOS 7/8, Alma Linux 8 & Rocky Linux 8
 
-yum update -y
+```bash
+# Update the system and install dependencies
+sudo yum update -y
 
-yum install -y curl
+# Install curl
+sudo yum install -y curl
 
+# Install Node.js 14.x
 sudo curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
-
 sudo yum install -y nodejs
 
-sudo yum install atk java-atk-wrapper at-spi2-atk gtk3 libXt libdrm mesa-libgbm nss libdrm mesa-libgbm
+# Install additional dependencies
+sudo yum install -y atk java-atk-wrapper at-spi2-atk gtk3 libXt libdrm mesa-libgbm nss
 
-go to your website root 
+#Navigate to your website root
+
+cd /path/to/your/website
+
+#Install Puppeteer version 17.1.3
 
 sudo npm install --save puppeteer@~17.1.3
+```
 
-done
+## On Ubuntu 18.04, 20.04, 22.04
 
-
-# **on ubuntu 20.04, 22.04**
+```bash
+#Update the system and install dependencies
 
 sudo apt-get update
-
 sudo apt update
 
+# Install curl
 sudo apt install -y curl
 
+# Install Node.js 14.x
 sudo curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
-
 sudo apt install -y nodejs
 
+# Install npm
 sudo apt-get install npm
 
-sudo apt install libgconf-2-4 libatk1.0-0 libatk-bridge2.0-0 libgdk-pixbuf2.0-0 libgtk-3-0 libgbm-dev libnss3-dev libxss-dev
+# Install additional dependencies
+sudo apt install -y libgconf-2-4 libatk1.0-0 libatk-bridge2.0-0 libgdk-pixbuf2.0-0 libgtk-3-0 libgbm-dev libnss3-dev libxss-dev
 
-go to your website root 
+#Navigate to your website root
+
+cd /path/to/your/website
+
+#Install Puppeteer version 17.1.3
 
 sudo npm install --save puppeteer@~17.1.3
-
-done
+```
