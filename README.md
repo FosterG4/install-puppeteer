@@ -40,7 +40,7 @@ sudo curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
 sudo yum install -y nodejs
 
 # Install additional dependencies
-sudo yum install -y atk java-atk-wrapper at-spi2-atk gtk3 libXt libdrm mesa-libgbm nss
+sudo yum install atk java-atk-wrapper at-spi2-atk gtk3 libXt libdrm mesa-libgbm nss libdrm mesa-libgbm
 
 #Navigate to your website root
 
